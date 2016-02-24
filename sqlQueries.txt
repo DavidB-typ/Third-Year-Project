@@ -1,0 +1,19 @@
+SQL QUERIES FOR PROJECT FUNCTIONS
+
+/**
+*Get first names and lastnames from the guestlist
+*Guestlist is gotten by concatenating eventID and 'guestlist'
+*
+*/
+SELECT users.firstname, users.lastname, guestlist0.role
+FROM guestlist0
+INNER JOIN users
+ON guestlist0.`attendeeID`=users.id;
+
+/**
+*TODO
+*query for auto creating a guestlist
+*automatically add the user logged in as the organiser
+*
+*/
+
