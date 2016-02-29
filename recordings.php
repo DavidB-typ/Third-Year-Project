@@ -1,3 +1,7 @@
+<?php
+        session_start();
+?>
+
 <!DOCTYPE html>
 <!-- Link to this page with <li><a href="recordings.php">Recordings</a></li> -->
 <html>
@@ -71,12 +75,15 @@
 
 
                     <?php
+                    /**
                     require_once 'NeilLib.php';
                     begin_section("Add a recording");
                     upload_recording('localhost', 'root', '', 'projectdb');
                     make_picture('assets/img/other/sound-editing-4.jpg', "A mechanical sound editor");
                     
                     end_section();
+                     * 
+                     */
                     ?>
 
                     <div class="col content">
@@ -107,16 +114,11 @@
                                 </div>
 
                                 <?php
-                                /**
-                                 * 
-
                                   require_once 'NeilLib.php';
                                   begin_section('Browse Recordings');
                                   browse_recordings('localhost', 'root', '', 'projectdb');
+
                                   end_section();
-                                 * 
-                                 * 
-                                 */
                                 ?>          
                             </div>
                         </div>
